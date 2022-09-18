@@ -1,4 +1,4 @@
-package uz.myExample;
+package myExample;
 
 import java.util.Scanner;
 
@@ -12,6 +12,8 @@ public class Toza {
         int max = 0;
         int q = 1;
         int i = 0;
+        int m =0;
+
         while (n > i) {
             num = scanner.nextInt();
             if (max < num) {
