@@ -7,22 +7,22 @@ public class Ekub {
         int b = scanner.nextInt();
         int i = 1;
         int q = 0;
-        if (a > b) {
-            while (a > i) {
+//        if (a > b) {
+            while (a >= i) {
                 if (a % i == 0 && b % i == 0) {
                    q=i;
                 }
                 i++;
             }
             System.out.println(q);
-        } else {
-            while (b > i) {
-                if ((a % i == 0 && b % i == 0)) {
-                    q=i;
-                }
-                i++;
-            }
-            System.out.println(q);
-        }
+//        } else {
+//            while (b > i) {
+//                if ((a % i == 0 && b % i == 0)) {
+//                    q=i;
+//                }
+//                i++;
+//            }
+//            System.out.println(q);
+//        }
     }
 }
