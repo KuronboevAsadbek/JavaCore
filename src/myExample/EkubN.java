@@ -6,22 +6,26 @@ public class EkubN {
         static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
-        nEKUB(scanner.nextInt());
-
-    }
-    public static int nEKUB(int n){
-        int i=1;
-        int q=0;
-        int a;
-        while (true) {
-        a=scanner.nextInt();
-            if (a % i == 0) {
-                q=i;
+        int n = scanner.nextInt();
+        int i = 0;
+        int z = 0;
+        int x = 0;
+        while (n > i){
+            int num = scanner.nextInt();
+            if(x == 0){
+                x = num;
             }
+            int y = 1;
+            while (num >= y){
+                if(num % y == 0 && x % y == 0){
+                    z = y;
+                }
+                y++;
+            }
+            x =z;
             i++;
-            return q;
         }
+        System.out.println("EKUB : "+x);
     }
 
 }
